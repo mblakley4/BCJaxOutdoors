@@ -1,0 +1,86 @@
+* { 
+    box-sizing: border-box;
+}
+
+/* ----- header & nav section ----- */
+header {
+    text-align: center;
+}
+
+nav {
+    padding: 10px;
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+nav a {
+    color: black;
+    text-decoration: none;
+}
+
+nav a:hover{
+    font-weight: bolder;
+}
+
+/* ----- main section ---- */
+
+body div {
+    padding: 10px;
+}
+
+
+@media (min-width: 900px) {
+    .mainContainer {
+        display: flex;
+    }
+
+    .leftContainer {
+        flex: 35%;
+    }    
+
+    .rightContainer {
+        flex: 65%;
+    }
+}
+
+
+
+
+
+/* ---- footer section ----- */
+footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: #555;
+    padding: 10px;
+    width: auto;
+    height: 55px;
+}
+
+.socialLinks {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    justify-content: space-evenly;
+    align-items: center;
+    margin: 0;
+    padding: 5px;
+}
+
+.icon {
+    height: 25px;
+    width: 25px;
+}
+
+.emailLogo {
+    height: 30px;
+    width: 35px;
+}
+
+.icon:hover {
+    transform: scale(1.5);
+}
